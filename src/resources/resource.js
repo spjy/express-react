@@ -15,3 +15,5 @@ router.post(
     return next();
   }
 );
+
+module.exports = router;

@@ -1,23 +1,24 @@
 {
-  "name": "cosmos-web-3d",
-  "version": "1.0.0",
-  "description": "This repository is for the cosmos web api's 3D object module.",
-  "main": "app.js",
+  "name": "express-react",
+  "version": "1.0.1",
+  "author": "Spencer Young <spencerpjy@gmail.com>",
+  "description": "Express + React Boilerplate",
   "scripts": {
-    "start": "node app.js",
-    "watch": "nodemon app.js"
+    "start": "node src/",
+    "watch": "nodemon src/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://spencerpjy@bitbucket.org/cizumigawa/cosmos-web-3d.git"
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:4000/",
+      "ws": true
+    }
   },
-  "author": "",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/cizumigawa/cosmos-web-3d#readme",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.1",
-    "ejs": "^2.5.7",
+    "dotenv-extended": "^2.0.2",
     "express": "^4.15.4",
+    "helmet": "^3.12.1",
     "https": "^1.0.0",
     "mongoose": "^5.0.6",
     "socket.io": "^2.0.3"
