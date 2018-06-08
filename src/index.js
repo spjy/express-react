@@ -5,6 +5,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
+const mongoose = require('mongoose');
 const server = require('http').createServer(app);
 const path = require('path');
 const io = require('socket.io').listen(server);

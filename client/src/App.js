@@ -4,7 +4,6 @@ import io from 'socket.io-client';
 import logo from './logo.svg';
 import './App.css';
 
-const app = feathers();
 const socket = io('http://localhost:3001');
 
 class App extends Component {
@@ -16,11 +15,15 @@ class App extends Component {
   }
 
   emailChange(e) {
-    this.setState({ email: e.target.value });
+    this.setState({ 
+      email: e.target.value 
+    });
   }
 
   passwordChange(e) {
-    this.setState({ password: e.target.value });
+    this.setState({ 
+      password: e.target.value 
+    });
   }
 
   render() {
